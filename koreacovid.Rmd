@@ -36,11 +36,13 @@ with(kRdata, table(Sex, result))
 
 ```
 
+First we need a basic table to start out with as this can be used to make charts with later on.  
+
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
-`
+```{r}
 
-  
+```
 
 
 
