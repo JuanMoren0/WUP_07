@@ -59,6 +59,12 @@ In the graphs above you can see frequency wise it appears more male die then fem
   
 ## Numerical results
 
+```{r}
+table2 <- xtabs(~result + sex, data=kRdata)
+rowPerc(table2)
+colPerc(table2)
+```
+Now looking at the numerical results we percentages both in columns and in rows that was shown in the bar graphs above.  
 
 ## Inferential results 
 
