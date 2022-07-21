@@ -64,14 +64,19 @@ table2 <- xtabs(~result + sex, data=kRdata)
 rowPerc(table2)
 colPerc(table2)
 ```
-Now looking at the numerical results we percentages both in columns and in rows that was shown in the bar graphs above.  
+
+Now looking at the numerical results we percentages both   in columns and in rows that was shown in the bar graphs   above. That was not mentioned or explained well in the   earlier part where we had a simple  data chart  
 
 ## Inferential results 
 
 ```{r}
 chisq.test(table2)
 chisqtestGC(table2)
+fisher.test(table2)
 ```
+
+Take notice of the P-value from the fisher test, notice   how small the p-value is, this means that there is a   difference of some kind and its one that is backed up   with chi-sq test.  
+
 
 ## Conclusions
 
