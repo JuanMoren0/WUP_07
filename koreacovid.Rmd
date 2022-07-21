@@ -80,3 +80,4 @@ Take notice of the P-value from the fisher test, notice   how small the p-value 
 
 ## Conclusions
 
+From looking at all the data we can see that being a male and catching covid will increase the likely hood of dying then if a person was a female.
