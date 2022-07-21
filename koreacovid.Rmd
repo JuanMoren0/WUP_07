@@ -41,13 +41,21 @@ First we need a basic table to start out with as this can be used to make charts
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
 ```{r}
+BP <- kRdata %>% group_by(result, sex) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
+
+# frequency plot
+
+basicC <- ggplot(BP,aes(x=result,y=count,fill=sex))
+basicC + geom_bar(stat="identity",position="dodge")
+
+# percent plot
+
+basicCC <- ggplot(BP,aes(x=result,y=prcnt*100,fill=sex)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-
-
-
-
+In the graphs above you can see frequency wise it appears more male die then female, then looking at the percent graph we can see that males die more then females.  
   
 ## Numerical results
 
