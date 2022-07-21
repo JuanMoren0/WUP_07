@@ -68,8 +68,10 @@ Now looking at the numerical results we percentages both in columns and in rows 
 
 ## Inferential results 
 
-
-
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+```
 
 ## Conclusions
 
